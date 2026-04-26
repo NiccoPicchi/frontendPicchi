@@ -18,13 +18,13 @@
 
 @media (min-width: 768px) and (max-width: 823px) {
     .main-navbar .navbar-nav {
-        flex-wrap: wrap;              /* permette la seconda riga */
-        justify-content: center;      /* centra tutto */
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .main-navbar .navbar-nav .search-item {
-        flex-basis: 100%;             /* OCCUPA UNA RIGA INTERA */
-        text-align: center;           /* centrata */
+        flex-basis: 100%;
+        text-align: center;
         margin-top: 0.3rem;
     }
 }
@@ -41,7 +41,30 @@
     }
 }
 
+.toggler-icon{
+    color: #222222;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 15px;
+}
+
+.toggler-text{
+    padding-left: 5px;
+}
+
 /* HEADER CENTRALE */
+
+@media (max-width: 767px){
+    .header-container .site-branding .main-title {
+        font-size: 30px;
+    }
+}
+
 .header-container .site-branding{
     text-align: center;
     background-color: #ffffff;
@@ -73,6 +96,7 @@
     font-weight: 400;
     text-transform: none;
     font-size: 15px;
+    word-wrap: break-word;
 }
 
 /* SECONDARY_NAVBAR */
@@ -154,11 +178,27 @@
 }
 
 /*FIRST SECTION*/
+@media (max-width: 767px) {
+    .row .first-section-first-column{
+        padding: 0;
+    }
+
+    .first-section-first-column .last-p{
+        margin-bottom: 0;
+    }
+}
+
+
 .first-section{
     text-align: center;
 }
 
 .first-section-container{
+    background-image: url("https://placehold.co/600x300/E3E3E0/E3E3E0?text=");
+    background-size: cover;
+}
+
+.first-section-content{
     padding-top: 35px;
     padding-left: 35px;
     padding-right: 35px;
@@ -218,6 +258,11 @@ h2{
     line-height: 1.6;
 }
 
+.image{
+    height: auto;
+    max-width: 100%;
+}
+
 /*SEPARATOR*/
 .separator{
     background-color: #222222;
@@ -230,6 +275,11 @@ h2{
 }
 
 /* SECOND SECTION */
+@media (max-width: 768px) {
+    h2{
+        font-size: 25px;
+    }
+}
 
 .second-section-first-column{
     padding: 0 5px 0 10px;
@@ -298,6 +348,7 @@ h2{
 .social-icons a:hover {
     opacity: 0.7;
 }
+
 .second-section-second-column{
     padding: 0 10px 0 10px;
 }
@@ -324,8 +375,8 @@ h2{
 .section-content{
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
     max-width: 985px;
     margin-left: auto;
     margin-right: auto;
@@ -337,17 +388,43 @@ h2{
 }
 
 /* FOURTH SECTION */
+.fourth-section-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    max-width: 985px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fixed-right{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.col-text{
+    flex: 1 1 0;
+    min-width: 10px;
+}
+
+.col-image{
+    flex: 0 0 363px;
+    float: right;
+}
+
 .text-container p{
     margin-bottom: 0.8em;
     font-size: 17.6px;
 }
 
-.download{
+/*.download{
     margin-bottom: 0;
     box-sizing: border-box;
     vertical-align: bottom;
-
-}
+    max-width: 100%;
+    height: auto;
+}*/
 
 /* FIFTH SECTION */
 .fifth-section-container{
@@ -434,24 +511,140 @@ h2{
     margin-bottom: 0;
 }
 
+/* EIGHT-SECTION */
+.eighth-section-container{
+    margin-bottom: 0;
+}
 
+.eighth-section .section-content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 985px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.eighth-section .section-content p{
+    text-align: center;
+    margin-bottom: 0;
+    word-wrap: break-word;
+}
 
+/* FOOTER */
+/* A 1025px vogliamo 4 colonne */
+@media (min-width: 1025px) {
+    .footer-row > .col-item {
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-bottom: 0;
+    }
+}
 
+.grid-container{
+    max-width: 985px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.footer-widgets{
+    padding: 60px 40px 40px 40px;
+    background-color: #d6d6d6;
+    background-image: url(https://www.nhgazette.com/wp-content/uploads/2020/06/tide-web.png);
+    background-repeat: repeat-x;
+    background-size: 100% auto;
+    background-position: top;
+}
 
+.col-item{
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
 
+.widget{
+    padding: 0 0 0 40px;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
 
+.widget-title{
+    color: #000000;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: none;
+    text-align: left;
+}
 
+.widget p{
+    margin-bottom: 13.6px;
+}
 
+.widget-ul{
+    padding: 0;
+}
 
+.special-ul{
+    margin-left: 1em;
+    margin-top: 5px;
+    word-wrap: break-word;
+}
 
+.widget li{
+    list-style-type: none;
+    padding-bottom: 5px;
+    color: #222222;
+}
 
+.search-field{
+    color: #666666;
+    background-color: #fafafa;
+    border-color: #cccccc;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    max-width: 100%;
+    background: #fafafa;
+    width: 100%;
+}
 
+.twitter-box {
+    width: 40px;          /* dimensione del quadrato */
+    height: 40px;
+    background: #000;     /* sfondo nero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.twitter-box i {
+    font-size: 22px;      /* dimensione dell’icona */
+    color: #fff;          /* icona bianca */
+}
 
+footer{
+    padding: 20px;
+    color: #ffffff;
+    background-color: #222222;
+    text-align: center;
+    font-size: 15px;
+}
 
-
+.copyright-bar{
+    max-width: 985px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 body{

@@ -13,9 +13,9 @@
 <nav class="navbar navbar-expand-md main-navbar">
     <div class="collapse show d-md-none d-flex justify-content-between align-items-center w-100">
         <button class="navbar-toggler border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>Menu
+            <a class="toggler-icon"><i class="bi bi-list"></i><span class="toggler-text">Menu</span></a>
         </button>
-        <button class="nav-btn btn-light border-0 bg-transparent">🔍</button>
+        <button class="nav-btn btn-light border-0 bg-transparent"><a class="toggler-icon"><i class="bi bi-search"></i></a></button>
     </div>
    <div class="container-fluid">
        <div class="collapse navbar-collapse justify-content-center align-items-center" id="navMenu">
@@ -25,7 +25,11 @@
                <li class="nav-item"><a>Where to get the Gazette</a></li>
                <li class="nav-item"><a>Advertising</a></li>
                <li class="nav-item"><a>Masthead</a></li>
-               <li class="nav-item search-item"><a>🔍</a></li>
+               <li class="nav-item search-item">
+                   <a>
+                       <i class="bi bi-search"></i>
+                   </a>
+               </li>
            </ul>
        </div>
    </div>
@@ -39,13 +43,13 @@
 <nav class="navbar navbar-expand-md secondary-navbar navbar-dark" >
     <div class="collapse  show d-md-none d-flex justify-content-center align-items-center w-100">
         <button class="secondary-navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navDepartments">
-            <span class="navbar-toggler-icon secondary-toggler-icon"></span> Departments </button>
+            <i class="bi bi-list"></i> Departments </button>
     </div>
     <div class="container-fluid">
         <div class="collapse navbar-collapse justify-content-center align-items-center " id="navDepartments">
             <ul class="navbar-nav secondary-navbar-nav flex-row gap-1">
                 <li class="secondary-nav-item"><a>The FortNightly Rant</a></li>
-                <li class="secondary-nav-item"><a>The Alleged News</a></li>
+                <li class="secondary-nav-item"><a>The Alleged News®</a></li>
                 <li class="secondary-nav-item"><a>Mash Notes, Hate Mail & Other Correspondence</a> </li>
                 <li class="secondary-nav-item second-row"><a>The Northcountry Cronichle</a> </li>
                 <li class="secondary-nav-item second-row second-row-alone "><a>Page 8</a> </li>
@@ -56,29 +60,31 @@
 
 <div class="site-content">
     <main class="site-main">
-        <div class="container justify-content-center align-items-center first-section-container w-100">
+        <div class="first-section-container justify-content-center align-items-center w-100">
             <section class="first-section">
-                <div class="row">
-                    <div class="col-12 col-md-7 first-section-first-column">
-                        <h3> The Nation's Oldest Newspaper</h3>
-                        <h2>
-                            <strong>A svelte, one-ounce packet of unfettered, non-fiction news.</strong>
-                        </h2>
-                        <p>
-                            <strong>Distributed for free by people just like you.</strong>
-                        </p>
-                        <p>
-                            This map shows where you can get the latest copy of the <strong><em>Gazette</em></strong>
-                        </p>
-                        <p>
-                            <strong><em>You can be part of our unique distribution system</em></strong>
-                        </p>
-                        <p>
-                            <button class="button section-btn bg-transparent">Learn More</button>
-                        </p>
-                    </div>
-                    <div class="col-12 col-md-5 first-section-second-column">
-                        <img decoding="async" class="image align-center " src="https://placehold.co/362" alt="" width="362" height="362" sizes="(max-width: 400px) 100vw, 400px">
+                <div class="first-section-content">
+                    <div class="row">
+                        <div class="col-12 col-md-7 first-section-first-column">
+                            <h3> The Nation's Oldest Newspaper</h3>
+                            <h2>
+                                <strong>A svelte, one-ounce packet of unfettered, non-fiction news.</strong>
+                            </h2>
+                            <p>
+                                <strong>Distributed for free by people just like you.</strong>
+                            </p>
+                            <p>
+                                This map shows where you can get the latest copy of the <strong><em>Gazette</em></strong>
+                            </p>
+                            <p>
+                                <strong><em>You can be part of our unique distribution system</em></strong>
+                            </p>
+                            <p class="last-p">
+                                <button class="button section-btn bg-transparent">Learn More</button>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-5 first-section-second-column">
+                            <img decoding="async" class="image align-center " src="https://placehold.co/400/F5F5F3/C8C8C8" alt="" width="400" height="400" sizes="(max-width: 400px) 100vw, 400px">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -253,7 +259,7 @@
         <div class="justify-content-center align-items-center w-100">
             <div class="section-container">
                 <section class="fourth-section">
-                    <div class="section-content justify-content-center align-items-center">
+                    <div class="fourth-section-content justify-content-center align-items-center">
                         <header class="section-header">
                             <h2>Read the Latest Paper Online <br>
                                 –=≈=–
@@ -263,16 +269,16 @@
                             <header class="article-header">
                                 <h2 class="article-title">Volume 270, No. 16</h2>
                             </header>
-                            <div class="article-content">
-                                <div class="row" >
-                                    <div class="col-sm-6 col-md-10">
+                            <div class="content">
+                                <div class="row fixed-right" >
+                                    <div class="col-text">
                                         <div class="text-container justify-content-left">
                                             <p>Let the record show that what passes for civilization has reached the state at which it’s possible to say without exaggeration that any fortnight without Armageddon is a good one. </p>
                                             <p> In celebration of not yet having been destroyed by an autocrat with both frontotemporal dementia and nuclear weapons, we have published another newspaper.</p>
                                             <p>To read our latest issue, just give this link a click.</p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-2 article-column">
+                                    <div class="col-image">
                                         <img class="download" src="https://placehold.co/363x516" sizes="(max-width: 363px) 100vw, 363px">
                                     </div>
                                 </div>
@@ -325,56 +331,120 @@
                 </div>
             </section>
         </div>
+
+        <div class="eighth-section-container">
+            <section class="eighth-section">
+                <div class="section-content justify-content-center align-items-center">
+                    <h2>Admiral Fowle’s Piscataqua River Tidal Guide<br>
+                        (Not for Navigational Purposes)</h2>
+                    <p class="no-margin-bottom-p">Portsmouth, arguably the first town in this country not founded by religious extremists, is bounded on the north and east by the Piscataqua River, the second, third, or fourth fastest-flowing navigable river in the country…read more</p>
+                </div>
+            </section>
+        </div>
     </main>
 </div>
 
+<div class="footer-container">
+    <div class="footer-widgets">
+        <div class="grid-container">
+            <div class="row footer-row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-item">
+                    <aside class="widget">
+                        <h2 class="widget-title">Contributors</h2>
+                        <p>&nbsp</p>
+                        <div class="widget-text">
+                            <ul class="widget-ul">
+                                <li>Mike Dater</li>
+                                <li>W.D. Ehrhart</li>
+                                <li>Jim Hightower</li>
+                                <li>Jean Stimmell</li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside class="widget">
+                        <h2 class="widget-title">Links</h2>
+                        <div class="widget-text">
+                            <ul class="widget-ul">
+                                <li>Locals</li>
+                                <li>News</li>
+                                <li>Papers</li>
+                                <li>Politics</li>
+                                <li>Veterans</li>
+                                <li>Veterans' Organizations</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-item">
+                    <aside class="widget">
+                        <h2 class="widget-title">Departments</h2>
+                        <div class="widget-text">
+                            <ul class="widget-ul">
+                                <li>The Fortnightly Rant</li>
+                                <li>The Alleged News®</li>
+                                <li>Mash Notes, Hate Mail &</li>
+                                <li>Other Correspondence</li>
+                                <li>The Northcountry Chronicle</li>
+                                <li>Page 8</li>
+                                <li>Digital Issues (PDFs)</li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside class="widget">
+                        <p>The Bush/Nazi Stories</p>
+                        <div class="widget-text">
+                            <ul class="widget-ul special-ul">
+                                <li>Bush/Nazi Link Confirmed</li>
+                                <li>Bush/Nazi Link Continued</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
 
+                <div class="col-sm-12 col-md-6 col-lg-6 col-item">
+                    <aside class="widget">
+                        <h2 class="widget-title">Search the archives</h2>
+                        <div class="widget-text">
+                            <form class="search-form">
+                                <input class="search-field" type="search" placeholder="Search..." aria-label="Search through site content">
+                            </form>
+                        </div>
+                    </aside>
+                    <aside class="widget">
+                        <h2 class="widget-title">People Powered Press</h2>
+                        <div class="widget-text">
+                            <p>A contribution of any size helps our efforts and our future.</p>
+                            <img src="https://placehold.co/147x47" width="147" height="47">
+                        </div>
+                    </aside>
+                </div>
 
+                <div class="col-sm-12 col-md-6 col-lg-6 col-item">
+                    <aside class="widget">
+                        <h2 class="widget-title">Mailing information</h2>
+                        <div class="widget-text">
+                            <p>The New Hampshire Gazette<br>
+                                PO Box 756<br>
+                                Portsmouth, NH 03802</p>
+                        </div>
+                    </aside>
+                    <aside class="widget">
+                        <div class="twitter-box">
+                            <i class="bi bi-twitter"></i>
+                        </div>
 
+                    </aside>
+                </div>
 
-
-
-
-
-
-
-
-
-
-<main>
-    <article>
-        <header>
-            <h2>What the Hell is Going On?</h2>
-            <time datetime="2026-03-20">March 20, 2026</time>
-        </header>
-        <p>Estratto...</p>
-        <a href="#">Read more</a>
-    </article>
-
-    <!-- altri articoli -->
-</main>
-
-<section class="page8">
-    <h2>Page 8</h2>
-    <article>
-        <time>Thurs, March 26 2021</time>
-        <p>...</p>
-    </article>
-</section>
-
-<aside class="cartoons">
-    <h2>Political Cartoons</h2>
-    <a href="#">Visit the Gallery</a>
-</aside>
-
-<footer>
-    <address>
-        The New Hampshire Gazette<br>
-        PO Box 756<br>
-        Portsmouth, NH 03802
-    </address>
-</footer>
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright-bar">
+                ©1756-2026 The New Hampshire Gazette - The Nation’s Oldest Newspaper™ <br>
+                Published 26 times a year on alternating Friday
+        </div>
+    </footer>
+</div>
 </body>
 </html>
