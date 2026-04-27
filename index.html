@@ -15,20 +15,20 @@
         <button class="navbar-toggler border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
             <a class="toggler-icon"><i class="bi bi-list"></i><span class="toggler-text">Menu</span></a>
         </button>
-        <button class="nav-btn btn-light border-0 bg-transparent"><a class="toggler-icon"><i class="bi bi-search"></i></a></button>
+        <button class="nav-btn border-0"><a class="toggler-icon"><i class="bi bi-search"></i></a></button>
     </div>
    <div class="container-fluid">
        <div class="collapse navbar-collapse justify-content-center align-items-center" id="navMenu">
            <ul class="navbar-nav flex-row gap-1">
-               <li class="nav-item"><a>Subscribe/Donate</a></li>
-               <li class="nav-item"><a>About the Gazette</a></li>
-               <li class="nav-item"><a>Where to get the Gazette</a></li>
-               <li class="nav-item"><a>Advertising</a></li>
-               <li class="nav-item"><a>Masthead</a></li>
+               <li class="nav-item"><button class="main-nav-btn">Subscribe/Donate</button></li>
+               <li class="nav-item"><button class="main-nav-btn">About the Gazette</button></li>
+               <li class="nav-item"><button class="main-nav-btn">Where to get the Gazette</button></li>
+               <li class="nav-item"><button class="main-nav-btn">Advertising</button></li>
+               <li class="nav-item"><button class="main-nav-btn">Masthead</button></li>
                <li class="nav-item search-item">
-                   <a>
+                   <button class="main-nav-btn">
                        <i class="bi bi-search"></i>
-                   </a>
+                   </button>
                </li>
            </ul>
        </div>
@@ -48,11 +48,11 @@
     <div class="container-fluid">
         <div class="collapse navbar-collapse justify-content-center align-items-center " id="navDepartments">
             <ul class="navbar-nav secondary-navbar-nav flex-row gap-1">
-                <li class="secondary-nav-item"><a>The FortNightly Rant</a></li>
-                <li class="secondary-nav-item"><a>The Alleged News®</a></li>
-                <li class="secondary-nav-item"><a>Mash Notes, Hate Mail & Other Correspondence</a> </li>
-                <li class="secondary-nav-item second-row"><a>The Northcountry Cronichle</a> </li>
-                <li class="secondary-nav-item second-row second-row-alone "><a>Page 8</a> </li>
+                <li class="secondary-nav-item"><button class="second-nav-btn">The FortNightly Rant</button></li>
+                <li class="secondary-nav-item"><button class="second-nav-btn">The Alleged News®</button></li>
+                <li class="secondary-nav-item"><button class="second-nav-btn">Mash Notes, Hate Mail & Other Correspondence</button> </li>
+                <li class="secondary-nav-item second-row"><button class="second-nav-btn">The Northcountry Cronichle</button> </li>
+                <li class="secondary-nav-item second-row second-row-alone "><button class="second-nav-btn">Page 8</button> </li>
             </ul>
         </div>
     </div>
@@ -79,7 +79,7 @@
                                 <strong><em>You can be part of our unique distribution system</em></strong>
                             </p>
                             <p class="last-p">
-                                <button class="button section-btn bg-transparent">Learn More</button>
+                                <button class="button section-btn">Learn More</button>
                             </p>
                         </div>
                         <div class="col-12 col-md-5 first-section-second-column">
@@ -94,11 +94,11 @@
         <div class="separator w-100"></div>
 
 
-        <div class="container justify-content-center align-items-center second-section-container">
+        <div class="second-section-container">
             <section class="second-section">
                 <div class="section-content">
                     <div class="row justify-content-center">
-                        <div class="col-12 col-md-8 second-section-first-column">
+                        <div class="col-12 col-md-6 col-lg-8 second-section-first-column">
                             <h2>Read the Latest Paper Online <br>
                                 –=≈=–</h2>
                             <article class="main-article">
@@ -151,7 +151,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-md-4 second-section-second-column">
+                        <div class="col-12 col-md-6 col-lg-4 second-section-second-column">
                             <header class="second-column-header">
                                 <p>
                                     <em>
@@ -261,7 +261,7 @@
                 <section class="fourth-section">
                     <div class="fourth-section-content justify-content-center align-items-center">
                         <header class="section-header">
-                            <h2>Read the Latest Paper Online <br>
+                            <h2>Download the Latest Paper<br>
                                 –=≈=–
                             </h2>
                         </header>
@@ -273,13 +273,11 @@
                                 <div class="row fixed-right" >
                                     <div class="col-text">
                                         <div class="text-container justify-content-left">
+                                            <img class="download" src="https://placehold.co/363x516" sizes="(max-width: 363px) 100vw, 363px" alt="">
                                             <p>Let the record show that what passes for civilization has reached the state at which it’s possible to say without exaggeration that any fortnight without Armageddon is a good one. </p>
                                             <p> In celebration of not yet having been destroyed by an autocrat with both frontotemporal dementia and nuclear weapons, we have published another newspaper.</p>
-                                            <p>To read our latest issue, just give this link a click.</p>
+                                            <p>To read our latest issue, <a class="download-link" href="#">just give this link a click.</a> </p>
                                         </div>
-                                    </div>
-                                    <div class="col-image">
-                                        <img class="download" src="https://placehold.co/363x516" sizes="(max-width: 363px) 100vw, 363px">
                                     </div>
                                 </div>
                             </div>
@@ -314,7 +312,7 @@
                     </header>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...</p>
                     <p>
-                        <button class="section-btn bg-transparent">Visit the Gallery</button>
+                        <button class="section-btn">Visit the Gallery</button>
                     </p>
                     <div>
                         <img class="section-img" src="https://placehold.co/890x741" width="890" height="741"  sizes="(max-width: 890px) 100vw, 890px">
@@ -325,7 +323,7 @@
 
         <div class="seventh-section-container">
             <section class="seventh-section">
-                <div class="section-content justify-content-center align-items-center">
+                <div class="section-content">
                     <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was …” </p>
                     <p class="no-margin-bottom-p">— E.S., Dover, N.H.</p>
                 </div>
@@ -354,10 +352,10 @@
                         <p>&nbsp</p>
                         <div class="widget-text">
                             <ul class="widget-ul">
-                                <li>Mike Dater</li>
-                                <li>W.D. Ehrhart</li>
-                                <li>Jim Hightower</li>
-                                <li>Jean Stimmell</li>
+                                <li><a class="footer-link" href="#">Mike Dater</a></li>
+                                <li><a class="footer-link" href="#">W.D. Ehrhart</a></li>
+                                <li><a class="footer-link" href="#">Jim Hightower</a></li>
+                                <li><a class="footer-link" href="#">Jean Stimmell</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -365,12 +363,12 @@
                         <h2 class="widget-title">Links</h2>
                         <div class="widget-text">
                             <ul class="widget-ul">
-                                <li>Locals</li>
-                                <li>News</li>
-                                <li>Papers</li>
-                                <li>Politics</li>
-                                <li>Veterans</li>
-                                <li>Veterans' Organizations</li>
+                                <li><a class="footer-link" href="#">Locals</a></li>
+                                <li><a class="footer-link" href="#">News</a></li>
+                                <li><a class="footer-link" href="#">Papers</a></li>
+                                <li><a class="footer-link" href="#">Politics</a></li>
+                                <li><a class="footer-link" href="#">Veterans</a></li>
+                                <li><a class="footer-link" href="#">Veterans' Organizations</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -380,13 +378,12 @@
                         <h2 class="widget-title">Departments</h2>
                         <div class="widget-text">
                             <ul class="widget-ul">
-                                <li>The Fortnightly Rant</li>
-                                <li>The Alleged News®</li>
-                                <li>Mash Notes, Hate Mail &</li>
-                                <li>Other Correspondence</li>
-                                <li>The Northcountry Chronicle</li>
-                                <li>Page 8</li>
-                                <li>Digital Issues (PDFs)</li>
+                                <li><a class="footer-link" href="#">The Fortnightly Rant</a></li>
+                                <li><a class="footer-link" href="#">The Alleged News®</a></li>
+                                <li><a class="footer-link" href="#">Mash Notes, Hate Mail & Other Correspondence</a></li>
+                                <li><a class="footer-link" href="#">The Northcountry Chronicle</a></li>
+                                <li><a class="footer-link" href="#">Page 8</a></li>
+                                <li><a class="footer-link" href="#">Digital Issues (PDFs)</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -394,8 +391,8 @@
                         <p>The Bush/Nazi Stories</p>
                         <div class="widget-text">
                             <ul class="widget-ul special-ul">
-                                <li>Bush/Nazi Link Confirmed</li>
-                                <li>Bush/Nazi Link Continued</li>
+                                <li><a class="footer-link" href="#">Bush/Nazi Link Confirmed</a></li>
+                                <li><a class="footer-link" href="#">Bush/Nazi Link Continued</a></li>
                             </ul>
                         </div>
                     </aside>
