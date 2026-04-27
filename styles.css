@@ -73,6 +73,7 @@
     text-decoration: none;
     line-height: 1.6;
     background-color: transparent;
+    word-break: keep-all;
 }
 
 .main-nav-btn:hover{
@@ -377,16 +378,20 @@ h2{
 .social-icons {
     display: flex;
     gap: 12px;
-    font-size: 20px;
-    color: #737373;
+    font-size: 15px;
 }
 
-.social-icons a {
+.social-icons a{
     text-decoration: none;
+    color: #737373;
+
+}
+.twitter:hover {
+    color: #0084b4;
 }
 
-.social-icons a:hover {
-    opacity: 0.7;
+.facebook:hover {
+    color: #2d4372
 }
 
 .second-section-second-column{
@@ -433,8 +438,8 @@ h2{
 .fourth-section-content {
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 35px;
+    padding-right: 35px;
     max-width: 985px;
     margin-left: auto;
     margin-right: auto;
@@ -454,7 +459,7 @@ h2{
     box-sizing: border-box;
     vertical-align: top;
     max-width: 100%;
-    height: 516px;
+    height: auto;
     float: right;
     margin: .5em 0 .5em 1em;
 }
@@ -469,7 +474,7 @@ h2{
 /* FIFTH SECTION */
 .fifth-section-container{
     width: 100%;
-    background-image: url("https://placehold.co/1920x600/000000/000000");
+    background-image: url("https://placehold.co/1920x600/1C1C1C/1C1C1C?text=");
     background-size: cover;
 }
 
@@ -552,7 +557,7 @@ h2{
 
 /* EIGHT-SECTION */
 @media (max-width: 768px) {
-    .eightth-section .section-content{
+    .eighth-section .section-content{
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -589,7 +594,7 @@ h2{
 .footer-widgets{
     padding: 60px 40px 40px 40px;
     background-color: #d6d6d6;
-    background-image: url(https://www.nhgazette.com/wp-content/uploads/2020/06/tide-web.png);
+    background-image: url("https://placehold.co/1280x115/D6D6D6");
     background-repeat: repeat-x;
     background-size: 100% auto;
     background-position: top;
@@ -672,6 +677,10 @@ h2{
 .twitter-box i {
     font-size: 22px;      /* dimensione dell’icona */
     color: #fff;          /* icona bianca */
+}
+
+.twitter-box:hover {
+    opacity: 0.6;
 }
 
 footer{
