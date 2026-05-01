@@ -1,3 +1,67 @@
+body{
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #3a3a3a;
+    font-weight: 400;
+    text-transform: none;
+}
+
+strong{
+    font-weight: 700;
+}
+em{
+    font-style: italic;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-transform: none;
+    font-family: inherit;
+    font-style: inherit;
+
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-transform: none;
+    font-family: inherit;
+    font-style: inherit;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-transform: none;
+    font-family: inherit;
+    font-style: inherit;
+}
+
+@media (max-width: 768px) {
+    h2{
+        font-size: 25px;
+    }
+}
+
+.site-content{
+    background-color: #f5f5f5;
+}
+
 /* NAVBAR SUPERIORE */
 .navbar-nav {
     flex-direction: row;
@@ -288,6 +352,35 @@
 .second-nav-btn:hover{
     background-color: #303030;
 }
+/*SECTIONS*/
+.section-content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    max-width: 985px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+}
+
+.section-btn{
+    display: inline-block;
+    padding: 8px 15px;
+    border: 2px solid #222;
+    color: #222;
+    font-size: 0.8em;
+    text-decoration: none;
+    line-height: 1.6;
+    background-color: transparent;
+}
+
+.section-btn:hover{
+    border: 2px solid transparent;
+    color: #fff;
+    background-color: #222;
+    text-decoration: none;
+}
 
 /*FIRST SECTION*/
 @media (max-width: 767px) {
@@ -333,49 +426,10 @@
     margin-bottom: 1.5em;
 }
 
-h3{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-    line-height: 1.2em;
-    font-weight: 400;
-    text-transform: none;
-    font-family: inherit;
-    font-style: inherit;
-}
-
-h2{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-    line-height: 1.2em;
-    text-transform: none;
-    font-family: inherit;
-    font-style: inherit;
-}
-
 .first-section-first-column p{
     text-align: center;
     margin-bottom: 1.5em;
     word-wrap: break-word;
-}
-
-.section-btn{
-    display: inline-block;
-    padding: 8px 15px;
-    border: 2px solid #222;
-    color: #222;
-    font-size: 0.8em;
-    text-decoration: none;
-    line-height: 1.6;
-    background-color: transparent;
-}
-
-.section-btn:hover{
-    border: 2px solid transparent;
-   color: #fff;
-    background-color: #222;
-    text-decoration: none;
 }
 
 .image{
@@ -390,16 +444,7 @@ h2{
     width: 100%;
 }
 
-.site-content{
-    background-color: #f5f5f5;
-}
-
 /* SECOND SECTION */
-@media (max-width: 768px) {
-    h2{
-        font-size: 25px;
-    }
-}
 
 .second-section-first-column{
     padding: 0 5px 0 10px;
@@ -492,16 +537,6 @@ h2{
     margin-bottom: 1em;
 }
 
-.section-content{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 35px;
-    padding-right: 35px;
-    max-width: 985px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: content-box;
-}
 
 /* THIRD SECTION */
 
@@ -650,7 +685,6 @@ h2{
 }
 
 /* FOOTER */
-/* A 1025px vogliamo 4 colonne */
 @media (min-width: 1025px) {
     .footer-row > .col-item {
         flex: 0 0 25%;
@@ -775,17 +809,17 @@ h2{
 }
 
 .twitter-box {
-    width: 40px;          /* dimensione del quadrato */
+    width: 40px;
     height: 40px;
-    background: #000;     /* sfondo nero */
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .twitter-box i {
-    font-size: 22px;      /* dimensione dell’icona */
-    color: #fff;          /* icona bianca */
+    font-size: 22px;
+    color: #fff;
 }
 
 .twitter-box:hover {
@@ -823,38 +857,4 @@ footer{
     text-align: center;
     z-index: 10;
     transition: opacity 300ms ease-in-out;
-}
-
-
-body{
-    font-family: "Playfair Display", serif;
-    font-size: 22px;
-    line-height: 1.6;
-    color: #3a3a3a;
-    font-weight: 400;
-    text-transform: none;
-}
-
-strong{
-    font-weight: 700;
-}
-em{
-    font-style: italic;
-}
-h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 20px;
-    line-height: 1.2em;
-    text-transform: none;
-    font-family: inherit;
-    font-style: inherit;
-
-}
-
-@media (max-width: 767px) {
-    h1 {
-        font-size: 30px;
-    }
 }
